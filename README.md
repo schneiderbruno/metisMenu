@@ -32,7 +32,7 @@ bower install metisMenu
 2. Include metisMenu StyleSheet
 
     ```html
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap.metismenu/1.1.0/css/metismenu.min.css">
+    <link rel="stylesheet" href="dist/metismenu.min.css">
     ```
 
 3. Include jQuery
@@ -50,7 +50,7 @@ bower install metisMenu
 5. Include metisMenu plugin's code
 
     ```html
-    <script src="//cdn.jsdelivr.net/bootstrap.metismenu/1.1.0/js/metismenu.min.js"></script>
+    <script src="dist/metismenu.min.js"></script>
     ```
 
 6. Call the plugin

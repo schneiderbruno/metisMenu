@@ -127,7 +127,7 @@
 
   // METISMENU DATA-API
   // ==============
-  $(window).on('load.metisMenu.data-api', function () {
+  $(document).on('click.metisMenu.data-api', function () {
     $('[data-toggle="metisMenu"]').each(function () {
       var $this = $(this)
       Plugin.call($this, $this.data())
