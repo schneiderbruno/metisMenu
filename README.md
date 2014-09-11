@@ -53,11 +53,21 @@ bower install metisMenu
     <script src="//cdn.jsdelivr.net/bootstrap.metismenu/1.1.0/js/metismenu.min.js"></script>
     ```
 
-6. Call the plugin:
+6.
+  a. Via data attributes
 
-    ```javascript
-    $("#menu").metisMenu();
-    ```
+      ```html
+      <ul data-toggle="metisMenu">
+        <li>
+         ...
+        ...
+      </ul>
+      ```
+  b. Via JavaScript
+
+      ```javascript
+      $('.your-menu').metisMenu(options);
+      ```
 
 ### Options
 
@@ -92,6 +102,8 @@ Contains a simple HTML file to demonstrate metisMenu plugin.
 
 ### Release History
 **DATE**       **VERSION**   **CHANGES**
+* 2014-09-11   v1.1.2      re-coded bootstrap style. Enable data-api
+* 2014-08-24   v1.1.1      merge AndrewEastwood patch-1 branch
 * 2014-07-07   v1.1.0	     Add double tap functionality
 * 2014-06-24   v1.0.3	     cdnjs support & rename plugin
 * 2014-06-18   v1.0.3        Create grunt task

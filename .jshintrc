@@ -1,15 +1,7 @@
 {
-    "boss": true,
-    "curly": true,
-    "eqeqeq": true,
-    "eqnull": true,
-    "expr": true,
-    "immed": true,
-    "noarg": true,
-    "onevar": true,
-    "quotmark": "double",
-    "smarttabs": true,
-    "trailing": true,
-    "unused": true,
-    "node": true
+  "extends" : "src/.jshintrc",
+  "asi" : false,
+  "browser" : false,
+  "es3" : false,
+  "node" : true
 }
