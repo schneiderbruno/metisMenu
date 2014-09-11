@@ -102,7 +102,7 @@ Contains a simple HTML file to demonstrate metisMenu plugin.
 
 ### Release History
 **DATE**       **VERSION**   **CHANGES**
-* 2014-09-11   v1.1.2      re-coded bootstrap style. Enable data-api
+* 2014-09-11   v1.2.0      re-coded bootstrap style. Enable data-api
 * 2014-08-24   v1.1.1      merge AndrewEastwood patch-1 branch
 * 2014-07-07   v1.1.0	     Add double tap functionality
 * 2014-06-24   v1.0.3	     cdnjs support & rename plugin
