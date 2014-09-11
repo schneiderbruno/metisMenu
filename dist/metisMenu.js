@@ -108,7 +108,7 @@
       var $this = $(this)
       var data = $this.data('metisMenu')
       var options = typeof  option == 'object' && option
-      if (data) data.remove()
+      // if (data) data.remove()
       if (!data) $this.data('metisMenu', (data = new MetisMenu(this, options)))
     })
   }
