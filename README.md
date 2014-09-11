@@ -53,21 +53,21 @@ bower install metisMenu
     <script src="//cdn.jsdelivr.net/bootstrap.metismenu/1.1.0/js/metismenu.min.js"></script>
     ```
 
-6.
-  a. Via data attributes
+6. Call the plugin
+  - Via data attributes
 
-      ```html
-      <ul data-toggle="metisMenu">
-        <li>
-         ...
-        ...
-      </ul>
-      ```
-  b. Via JavaScript
+    ```html
+    <ul data-toggle="metisMenu">
+      <li>
+      ...
+      ...
+    </ul>
+    ```
+  - Via JavaScript
 
-      ```javascript
+    ```javascript
       $('.your-menu').metisMenu(options);
-      ```
+    ```
 
 ### Options
 
