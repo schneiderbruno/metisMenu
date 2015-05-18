@@ -325,6 +325,41 @@
         doubleTapToGo: true
       });
     });
+    
+    //script for Search in metisMenu
+    //autor Bruno Germano Schneider
+    $("#buscaMenu").keyup(function(e){
+            var strPesquisa = $("#buscaMenu").val();
+            strPesquisa = strPesquisa.replace(/ /g,''); //remove espaço 'Categoria de produtos' => 'Categoriadeprodutos'
+            strPesquisa = strPesquisa.toLowerCase();    
+            if ( strPesquisa != "" ){
+                $("#side-menu li").removeClass("active");
+                $(".collapse").addClass("in");
+                $(".nav .nav-second-level").attr("aria-expanded", "true");
+                $(".nav-second-level li").removeClass("hidden");
+                $(".nav-second-level li").removeClass("found");
+            } else {
+                $("#side-menu li").removeClass("active");
+                $(".collapse").removeClass("in");
+                $(".nav .nav-second-level").attr("aria-expanded", "false");
+                $(".nav-second-level li").removeClass("hidden");
+                $(".nav-second-level li").removeClass("found");
+            }
+            $(".nav-second-level li").each(function( index ) {
+                
+                var nomeMenu = $( this ).text();
+                nomeMenu  = nomeMenu.replace(/ /g,'');
+                nomeMenu  = nomeMenu.toLowerCase();
+                if ( nomeMenu.indexOf(strPesquisa)==-1){
+                    $( this ).addClass( "hidden" );
+                } else if ( nomeMenu.indexOf(strPesquisa)>0){ //achou item
+                    $( this ).addClass( "found" );
+                    $( this ).closest(" ul ").closest(" li ").addClass("active");
+                }           
+            });
+        });
+    
+    
   </script>
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script>
